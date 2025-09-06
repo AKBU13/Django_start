@@ -1,6 +1,7 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 # Create your views here.
 def accueil(request):
-    return HttpResponse("<h1>Hey welcom to ma app 🚀</h1>")
+    return render(request,"index.html")
